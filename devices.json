@@ -1,0 +1,564 @@
+[
+    {
+        "ip": "192.168.1.1",
+        "mac": "24:2f:d0:ec:8e:e0",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.101",
+        "mac": "f2:36:1e:2c:df:6d",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.102",
+        "mac": "64:16:66:1:37:0",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.103",
+        "mac": "f4:3:2a:45:32:a5",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.104",
+        "mac": "d4:f9:21:ac:45:8a",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.141",
+        "mac": "48:a6:b8:40:b4:9",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.109",
+        "mac": "3c:5c:c4:e2:77:64",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.115",
+        "mac": "a0:d2:b1:13:c9:f",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.116",
+        "mac": "c0:f8:53:74:e1:a8",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.117",
+        "mac": "50:8a:6:72:ee:af",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.118",
+        "mac": "d4:a6:51:6f:56:7c",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.119",
+        "mac": "16:2b:8f:23:e5:2",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.122",
+        "mac": "10:27:f5:69:1b:f5",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.123",
+        "mac": "80:cb:bc:f0:93:32",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.125",
+        "mac": "2c:71:ff:8b:16:d3",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.126",
+        "mac": "70:b3:6:3e:c2:26",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.127",
+        "mac": "be:10:ed:60:90:7f",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.129",
+        "mac": "d4:57:63:d4:94:ba",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.130",
+        "mac": "74:ee:2a:ef:f3:f2",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.132",
+        "mac": "8c:85:80:8e:b8:53",
+        "brand": "Eufy",
+        "type": "Generic Device",
+        "confidence": 0.8
+    },
+    {
+        "ip": "192.168.1.133",
+        "mac": "6e:f5:da:35:43:1b",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.134",
+        "mac": "de:1f:4:17:1c:ed",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.135",
+        "mac": "c2:7:66:8e:1c:28",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.137",
+        "mac": "7c:64:56:a1:cb:8c",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.138",
+        "mac": "3c:f0:83:b:66:ac",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.139",
+        "mac": "88:64:40:71:59:aa",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.140",
+        "mac": "52:13:2f:df:b9:a7",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.142",
+        "mac": "3a:31:fd:fc:6f:a",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.150",
+        "mac": "94:ba:6:1a:6d:f5",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.152",
+        "mac": "ea:15:ab:53:dd:33",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.153",
+        "mac": "e0:9:bf:75:10:5c",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.154",
+        "mac": "7c:a6:b0:11:ca:9c",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.155",
+        "mac": "10:94:bb:c7:d:7e",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.163",
+        "mac": "60:5b:b4:c8:e5:c3",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.165",
+        "mac": "e0:9:bf:78:8b:68",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.167",
+        "mac": "1c:9d:c2:6f:7f:10",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.246",
+        "mac": "10:27:f5:d7:b8:28",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.247",
+        "mac": "24:2f:d0:ec:90:68",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.248",
+        "mac": "10:27:f5:d7:b8:14",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.249",
+        "mac": "24:2f:d0:ec:8e:e4",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.250",
+        "mac": "10:27:f5:d7:b8:48",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "224.0.0.251",
+        "mac": "1:0:5e:0:0:fb",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "239.255.255.250",
+        "mac": "1:0:5e:7f:ff:fa",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.164",
+        "mac": "aa:57:a1:bd:5:8c",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "Cloud Connection",
+        "mac": "7B:29:A4:C1:38:1B:DC:DB",
+        "brand": "Govee",
+        "type": "Light / H6110",
+        "name": "Garage tv light",
+        "model": "H6110",
+        "confidence": 1.0,
+        "source": "cloud"
+    },
+    {
+        "ip": "Cloud Connection",
+        "mac": "95:15:7C:A6:B0:5C:6F:CA",
+        "brand": "Govee",
+        "type": "Light / H615C",
+        "name": "Electronic",
+        "model": "H615C",
+        "confidence": 1.0,
+        "source": "cloud"
+    },
+    {
+        "ip": "Cloud Connection",
+        "mac": "23:1A:D4:AD:FC:A1:6C:11",
+        "brand": "Govee",
+        "type": "Light / H615B",
+        "name": "Bed",
+        "model": "H615B",
+        "confidence": 1.0,
+        "source": "cloud"
+    },
+    {
+        "ip": "Cloud Connection",
+        "mac": "01:67:D4:AD:FC:1C:A6:90",
+        "brand": "Govee",
+        "type": "Light / H615C",
+        "name": "Sehaj bedroom light",
+        "model": "H615C",
+        "confidence": 1.0,
+        "source": "cloud"
+    },
+    {
+        "ip": "192.168.1.1",
+        "mac": null,
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.104",
+        "mac": null,
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.107",
+        "mac": null,
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.120",
+        "mac": null,
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.123",
+        "mac": null,
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.137",
+        "mac": null,
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.141",
+        "mac": null,
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.163",
+        "mac": null,
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.0.1",
+        "mac": null,
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.0.100",
+        "mac": "60:A4:B7:AE:CB:56",
+        "brand": "TP-Link",
+        "type": "Switch",
+        "confidence": 1.0,
+        "name": "Kitchen light",
+        "model": "HS200(US)",
+        "source": "tplink_udp"
+    },
+    {
+        "ip": "192.168.0.102",
+        "mac": "5C:A6:E6:9A:42:99",
+        "brand": "TP-Link",
+        "type": "Switch",
+        "confidence": 1.0,
+        "name": "Lobby",
+        "model": "HS200(US)",
+        "source": "tplink_udp"
+    },
+    {
+        "ip": "192.168.0.103",
+        "mac": "60:A4:B7:AE:C0:A1",
+        "brand": "TP-Link",
+        "type": "Switch",
+        "confidence": 1.0,
+        "name": "Outside light",
+        "model": "HS200(US)",
+        "source": "tplink_udp"
+    },
+    {
+        "ip": "192.168.0.104",
+        "mac": "34:60:F9:F6:0A:29",
+        "brand": "TP-Link",
+        "type": "Switch",
+        "confidence": 1.0,
+        "name": "Dadi Bedroom",
+        "model": "HS220(US)",
+        "source": "tplink_udp"
+    },
+    {
+        "ip": "192.168.0.105",
+        "mac": "60:A4:B7:AE:C0:36",
+        "brand": "TP-Link",
+        "type": "Switch",
+        "confidence": 1.0,
+        "name": "Side living room",
+        "model": "HS200(US)",
+        "source": "tplink_udp"
+    },
+    {
+        "ip": "192.168.0.108",
+        "mac": "10:27:f5:df:eb:b7",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.0.109",
+        "mac": "84:D8:1B:C1:CD:A5",
+        "brand": "TP-Link",
+        "type": "Switch",
+        "confidence": 1.0,
+        "name": "Master bedroom main light",
+        "model": "HS200(US)",
+        "source": "tplink_udp"
+    },
+    {
+        "ip": "192.168.0.110",
+        "mac": "84:D8:1B:C1:D1:98",
+        "brand": "TP-Link",
+        "type": "Switch",
+        "confidence": 1.0,
+        "name": "Bathroom fan",
+        "model": "HS200(US)",
+        "source": "tplink_udp"
+    },
+    {
+        "ip": "192.168.0.111",
+        "mac": "60:A4:B7:AE:CD:65",
+        "brand": "TP-Link",
+        "type": "Switch",
+        "confidence": 1.0,
+        "name": "Japneet light",
+        "model": "HS200(US)",
+        "source": "tplink_udp"
+    },
+    {
+        "ip": "192.168.0.112",
+        "mac": "5C:A6:E6:9A:3F:A8",
+        "brand": "TP-Link",
+        "type": "Switch",
+        "name": "Sehaj room",
+        "model": "HS200(US)",
+        "confidence": 1.0,
+        "source": "tplink_udp"
+    },
+    {
+        "ip": "192.168.0.113",
+        "mac": "c2:a1:47:28:c6:1f",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.0.106",
+        "mac": "5C:A6:E6:9A:40:00",
+        "brand": "TP-Link",
+        "type": "Switch",
+        "confidence": 1.0,
+        "name": "Kitchen decoration light",
+        "model": "HS200(US)",
+        "source": "tplink_udp"
+    },
+    {
+        "ip": "192.168.0.101",
+        "mac": "B0:A7:B9:76:0B:CA",
+        "brand": "TP-Link",
+        "type": "Switch",
+        "confidence": 1.0,
+        "name": "Master bedroom dimmer light",
+        "model": "HS220(US)",
+        "source": "tplink_udp"
+    },
+    {
+        "ip": "192.168.0.107",
+        "mac": "B0:A7:B9:76:07:F9",
+        "brand": "TP-Link",
+        "type": "Switch",
+        "confidence": 1.0,
+        "name": "Living room light",
+        "model": "HS220(US)",
+        "source": "tplink_udp"
+    },
+    {
+        "ip": "192.168.0.108",
+        "mac": "10:27:F5:DF:EB:B7",
+        "brand": "TP-Link",
+        "type": "Switch",
+        "confidence": 1.0,
+        "name": "Dining light",
+        "model": "HS220(US)",
+        "source": "tplink_udp"
+    },
+    {
+        "ip": "192.168.0.107",
+        "mac": "b0:a7:b9:76:7:f9",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    }
+]

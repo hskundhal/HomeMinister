@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Network Scanner</title>
+    <link rel="stylesheet" href="style.css?v=2">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <main class="container">
+        <header>
+            <div class="logo">
+                <span class="icon">🏛️</span>
+                <h1>Home<span>Minister</span></h1>
+            </div>
+            <button id="scan-btn" class="btn-primary">
+                <span class="btn-text">Start Network Scan</span>
+                <div class="loader-ring"></div>
+            </button>
+        </header>
+
+        <section class="status-panel">
+            <div id="status-text">Ready to discover devices...</div>
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar"></div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-card">
+                <span class="stat-val" id="device-count">0</span>
+                <span class="stat-label">Devices Found</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-val" id="scan-time">0s</span>
+                <span class="stat-label">Scan Duration</span>
+            </div>
+        </section>
+
+        <div id="device-grid" class="device-grid">
+            <!-- Device cards injected here -->
+        </div>
+    </main>
+
+    <template id="device-card-template">
+        <div class="device-card">
+            <div class="card-glow"></div>
+            <div class="device-header">
+                <div class="device-brand-icon">?</div>
+                <div class="device-info">
+                    <h3 class="device-brand">Brand</h3>
+                    <p class="device-type">Type</p>
+                </div>
+                <div class="confidence-badge">100%</div>
+            </div>
+            <div class="device-details">
+                <div class="detail">
+                    <span class="label">IP Address</span>
+                    <span class="value ip">0.0.0.0</span>
+                </div>
+                <div class="detail">
+                    <span class="label">MAC Address</span>
+                    <span class="value mac">00:00:00:00:00:00</span>
+                </div>
+            </div>
+            <div class="control-actions" style="display:none;">
+                <button class="btn-control on">ON</button>
+                <button class="btn-control off">OFF</button>
+                <button class="btn-control view-btn" style="display:none;">VIEW</button>
+            </div>
+            <div class="camera-preview" style="display:none;">
+                <img class="snapshot" src="" alt="Camera Preview">
+            </div>
+        </div>
+    </template>
+
+    <script src="app.js?v=3"></script>
+</body>
+</html>
