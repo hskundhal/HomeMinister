@@ -4,6 +4,9 @@ from .eufy_security_controller import EufySecurityController
 from .eufy_robovac_controller import EufyRoboVacController
 from .tplink_controller import TPLinkController
 from .camhi_controller import CamHiController
+from .samsung_controller import SamsungController
+from .lg_controller import LGController
+from .hisense_controller import HisenseController
 
 def get_controller(device_info, config=None):
     brand = device_info.get('brand', '').lower()
@@ -30,6 +33,12 @@ def get_controller(device_info, config=None):
             username=config.get('camhi_username'), 
             password=config.get('camhi_password')
         )
+    elif "samsung" in brand:
+        return SamsungController(ip, mac)
+    elif "lg" in brand:
+        return LGController(ip, mac)
+    elif "hisense" in brand:
+        return HisenseController(ip, mac)
     elif "eufy" in brand:
         # Check if it's a vacuum or a camera based on type/name
         device_type = device_info.get('type', '').lower()

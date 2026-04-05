@@ -2,3 +2,6 @@ flask
 zeroconf
 netifaces
 requests
+samsungtvws
+aiopylgtv
+wakeonlan

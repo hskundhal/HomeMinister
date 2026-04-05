@@ -47,6 +47,18 @@ def identify_device(ip, mac, mdns_devices, ssdp_devices):
                 brand = "Eufy"
                 device_type = "Security Camera/Vac"
                 confidence = 1.0
+            elif "samsung" in mdns['name'].lower() or "_samsung_tv._tcp" in mdns['type'].lower():
+                brand = "Samsung"
+                device_type = "TV"
+                confidence = 1.0
+            elif "lg" in mdns['name'].lower() or "webos" in mdns['name'].lower() or "_lg-smart-device" in mdns['type'].lower() or "_viziocast" in mdns['type'].lower():
+                brand = "LG"
+                device_type = "TV"
+                confidence = 1.0
+            elif "hisense" in mdns['name'].lower() or "_hisensetv._tcp" in mdns['type'].lower():
+                brand = "Hisense"
+                device_type = "TV"
+                confidence = 1.0
 
     # Check SSDP
     for ssdp in ssdp_devices:
@@ -67,6 +79,18 @@ def identify_device(ip, mac, mdns_devices, ssdp_devices):
                 brand = "CamHi"
                 device_type = "IP Camera"
                 confidence = 0.9
+            elif "samsung" in server or "tizen" in server or "samsung" in st:
+                brand = "Samsung"
+                device_type = "TV"
+                confidence = 1.0
+            elif "webos" in server or "lg" in server:
+                brand = "LG"
+                device_type = "TV"
+                confidence = 1.0
+            elif "hisense" in server or "hisense" in st:
+                brand = "Hisense"
+                device_type = "TV"
+                confidence = 1.0
 
     return {
         "ip": ip,

@@ -147,6 +147,37 @@ header {
     margin-top: 5px;
 }
 
+.tabs-container {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--card-border);
+    padding-bottom: 15px;
+}
+
+.tab-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-dim);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.tab-btn:hover {
+    color: var(--text-main);
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.tab-btn.active {
+    color: var(--primary-color);
+    background: rgba(0, 242, 255, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 242, 255, 0.15);
+}
+
 .device-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

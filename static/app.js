@@ -3,7 +3,8 @@ const state = {
     isScanning: false,
     startTime: null,
     devices: [],
-    timerInterval: null
+    timerInterval: null,
+    activeTab: 'all'
 };
 
 const dom = {
@@ -24,6 +25,9 @@ const BRAND_ICONS = {
     "CamHi": "📹",
     "Eufy": "🛡️",
     "Google Nest": "🔉",
+    "Samsung": "📺",
+    "LG": "📺",
+    "Hisense": "📺",
     "Unknown": "❓"
 };
 
@@ -155,15 +159,27 @@ async function getDeviceStatus(ip) {
 }
 
 function renderDevices() {
-    dom.deviceCount.textContent = state.devices.length;
     dom.deviceGrid.innerHTML = '';
+    let visibleCount = 0;
 
     state.devices.forEach((device, index) => {
+        const b = (device.brand || "").toLowerCase();
+        const t = (device.type || "").toLowerCase();
+        const n = (device.name || "").toLowerCase();
+        const isControllable = b.includes("hue") || b.includes("govee") || b.includes("eufy") || b.includes("camhi") || b.includes("tp-link") || b.includes("kasa") || b.includes("samsung") || b.includes("lg") || b.includes("hisense");
+        const isSwitchOrLight = b.includes("hue") || b.includes("govee") || b.includes("tp-link") || b.includes("kasa");
+        const isTV = b.includes("samsung") || b.includes("lg") || b.includes("hisense") || t.includes("tv");
+        
+        if (state.activeTab === 'lights' && !isSwitchOrLight) return;
+        if (state.activeTab === 'tvs' && !isTV) return;
+        
+        visibleCount++;
+
         const clone = dom.cardTemplate.content.cloneNode(true);
         const card = clone.querySelector('.device-card');
         
         // Stagger entrance animation
-        card.style.animationDelay = `${index * 0.1}s`;
+        card.style.animationDelay = `${(visibleCount - 1) * 0.1}s`;
 
         const brandStr = device.brand !== "Unknown" ? device.brand : "Generic";
         clone.querySelector('.device-brand').textContent = device.name || brandStr;
@@ -179,14 +195,7 @@ function renderDevices() {
         else if (device.brand.includes("Philips")) clone.querySelector('.device-brand-icon').textContent = BRAND_ICONS["Philips Hue"];
         else clone.querySelector('.device-brand-icon').textContent = icon;
 
-        // Show/Hide control buttons
-        const b = device.brand.toLowerCase();
-        const t = (device.type || "").toLowerCase();
-        const n = (device.name || "").toLowerCase();
-        
-        console.log(`Rendering device: ${device.ip} | Brand: ${b} | Type: ${t}`);
-
-        if (b.includes("hue") || b.includes("govee") || b.includes("eufy") || b.includes("camhi") || b.includes("tp-link") || b.includes("kasa")) {
+        if (isControllable) {
             const actions = card.querySelector('.control-actions');
             actions.style.display = 'flex';
             card.querySelector('.btn-control.on').onclick = (e) => controlDevice(device.ip, 'on', e.target);
@@ -218,6 +227,8 @@ function renderDevices() {
 
         dom.deviceGrid.appendChild(clone);
     });
+    
+    dom.deviceCount.textContent = visibleCount;
 }
 
 async function fetchDevices() {
@@ -233,6 +244,15 @@ async function fetchDevices() {
         console.error("Failed to load saved devices", err);
     }
 }
+
+document.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        state.activeTab = e.target.dataset.tab;
+        renderDevices();
+    });
+});
 
 dom.scanBtn.addEventListener('click', startScan);
 document.addEventListener('DOMContentLoaded', () => {

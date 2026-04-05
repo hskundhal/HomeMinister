@@ -385,9 +385,9 @@
     {
         "ip": "192.168.1.137",
         "mac": null,
-        "brand": "Unknown",
-        "type": "Generic Device",
-        "confidence": 0.5
+        "brand": "Samsung",
+        "type": "TV",
+        "confidence": 1.0
     },
     {
         "ip": "192.168.1.141",
@@ -502,9 +502,9 @@
         "mac": "5C:A6:E6:9A:3F:A8",
         "brand": "TP-Link",
         "type": "Switch",
+        "confidence": 1.0,
         "name": "Sehaj room",
         "model": "HS200(US)",
-        "confidence": 1.0,
         "source": "tplink_udp"
     },
     {
@@ -539,9 +539,9 @@
         "mac": "B0:A7:B9:76:07:F9",
         "brand": "TP-Link",
         "type": "Switch",
-        "confidence": 1.0,
         "name": "Living room light",
         "model": "HS220(US)",
+        "confidence": 1.0,
         "source": "tplink_udp"
     },
     {
@@ -557,6 +557,55 @@
     {
         "ip": "192.168.0.107",
         "mac": "b0:a7:b9:76:7:f9",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.0.101",
+        "mac": "b0:a7:b9:76:b:ca",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.0.114",
+        "mac": "fc:67:1f:fb:c8:96",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.124",
+        "mac": "a4:f6:e8:90:1:d2",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.138",
+        "mac": null,
+        "brand": "LG",
+        "type": "TV",
+        "confidence": 1.0
+    },
+    {
+        "ip": "192.168.1.147",
+        "mac": "14:60:cb:6d:6f:8c",
+        "brand": "Unknown",
+        "type": "Generic Device",
+        "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.159",
+        "mac": null,
+        "brand": "Google Nest",
+        "type": "Smart Speaker/TV",
+        "confidence": 1.0
+    },
+    {
+        "ip": "192.168.1.156",
+        "mac": "fa:c9:81:a:22:6",
         "brand": "Unknown",
         "type": "Generic Device",
         "confidence": 0.5
