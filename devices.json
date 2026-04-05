@@ -609,5 +609,14 @@
         "brand": "Unknown",
         "type": "Generic Device",
         "confidence": 0.5
+    },
+    {
+        "ip": "192.168.1.153",
+        "mac": null,
+        "brand": "CamHi",
+        "type": "IP Camera",
+        "confidence": 0.85,
+        "name": "CamHi Camera (192.168.1.153)",
+        "source": "camhi_static"
     }
 ]

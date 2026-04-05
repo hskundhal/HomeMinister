@@ -8,6 +8,7 @@ MANUFACTURERS = {
     "60:01:94": "Espressif (Common in Govee/Cheap Smart Devices)",
     "d4:d2:d6": "Lefant",
     "00:0e:53": "CamHi",
+    "e0:09:bf": "CamHi",
     "b4:cf:33": "Eufy",
     "8c:85:80": "Eufy",
     "50:c7:bf": "TP-Link",

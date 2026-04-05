@@ -201,7 +201,7 @@ function renderDevices() {
             card.querySelector('.btn-control.on').onclick = (e) => controlDevice(device.ip, 'on', e.target);
             card.querySelector('.btn-control.off').onclick = (e) => controlDevice(device.ip, 'off', e.target);
             
-            // If it's a camera or Eufy device, show the VIEW button
+            // If it's a camera device, show the VIEW button
             if (t.includes("camera") || t.includes("doorbell") || b.includes("camhi") || b.includes("eufy") || n.includes("camera")) {
                 const viewBtn = card.querySelector('.view-btn');
                 viewBtn.style.display = 'block';
@@ -209,14 +209,22 @@ function renderDevices() {
                     const preview = card.querySelector('.camera-preview');
                     console.log(`View requested for ${device.ip}`);
                     if (preview.style.display === 'none') {
-                        const status = await getDeviceStatus(device.ip);
-                        console.log(`Status for ${device.ip}:`, status);
-                        if (status && status.length > 0 && (status[0].thumbnail || status.thumbnail)) {
-                            const thumb = status[0].thumbnail || status.thumbnail;
-                            preview.querySelector('img').src = thumb;
+                        if (b.includes("camhi")) {
+                            // CamHi cameras serve a static snapshot directly
+                            const snapUrl = `http://${device.ip}/tmpfs/auto.jpg`;
+                            preview.querySelector('img').src = snapUrl;
                             preview.style.display = 'block';
                         } else {
-                            alert("Could not load camera preview. Check if Eufy account has a recent snapshot.");
+                            // Eufy and others use the status API for thumbnails
+                            const status = await getDeviceStatus(device.ip);
+                            console.log(`Status for ${device.ip}:`, status);
+                            if (status && status.length > 0 && (status[0].thumbnail || status.thumbnail)) {
+                                const thumb = status[0].thumbnail || status.thumbnail;
+                                preview.querySelector('img').src = thumb;
+                                preview.style.display = 'block';
+                            } else {
+                                alert("Could not load camera preview. Check if the camera account has a recent snapshot.");
+                            }
                         }
                     } else {
                         preview.style.display = 'none';

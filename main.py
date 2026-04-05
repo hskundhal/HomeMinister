@@ -63,7 +63,7 @@ def run_background_scan(scan_id):
         
         # 2.7 CamHi UDP Discovery
         scans[scan_id]["status"] = "Scanning CamHi..."
-        camhi_results = scan_camhi(timeout=5)
+        camhi_results = scan_camhi(timeout=5, static_ips=config.get("camhi_static_ips", []))
         
         # 3.5 Cloud Discovery (Govee)
         govee_results = []
