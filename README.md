@@ -1,6 +1,21 @@
 # 🏛️ HomeMinister
 
-A central hub for managing your smart home devices, featuring a premium dark-themed dashboard and a robust discovery engine that identifies **Amazon Echo, Philips Hue, Govee, Lefant, CamHi, and Eufy** devices.
+A central hub for managing your smart home devices, featuring a premium dark-themed dashboard and a robust discovery engine that identifies and controls a wide range of devices from vendors like **TP-Link, Eufy, Samsung, LG, Philips Hue, Govee**, and more.
+
+## 📱 Supported Devices & Vendors
+
+HomeMinister is designed to be a universal controller, supporting a growing ecosystem of smart home hardware:
+
+| Category | Supported Brands & Devices |
+| :--- | :--- |
+| **Smart TVs** | Samsung (Tizen), LG (webOS), Hisense (Vidaa/Android) |
+| **Smart Lighting** | Philips Hue, Govee (Cloud & Local), TP-Link (Kasa/Tapo Bulbs) |
+| **Plugs & Switches** | TP-Link (Kasa & Tapo), Generic Espressif-based devices |
+| **Security** | Eufy Security (Cameras/Doorbells), CamHi IP Cameras |
+| **Robotics** | Eufy RoboVac, Lefant Vacuums |
+| **Voice / Media** | Amazon Echo (Alexa), Google Nest (Google Cast/Nest Audio) |
+
+---
 
 ## ✨ Features
 
