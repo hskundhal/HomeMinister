@@ -169,9 +169,11 @@ function renderDevices() {
         const isControllable = b.includes("hue") || b.includes("govee") || b.includes("eufy") || b.includes("camhi") || b.includes("tp-link") || b.includes("kasa") || b.includes("samsung") || b.includes("lg") || b.includes("hisense");
         const isSwitchOrLight = b.includes("hue") || b.includes("govee") || b.includes("tp-link") || b.includes("kasa");
         const isTV = b.includes("samsung") || b.includes("lg") || b.includes("hisense") || t.includes("tv");
+        const isCamera = t.includes("camera") || t.includes("doorbell") || b.includes("camhi") || b.includes("eufy") || n.includes("camera");
         
         if (state.activeTab === 'lights' && !isSwitchOrLight) return;
         if (state.activeTab === 'tvs' && !isTV) return;
+        if (state.activeTab === 'cameras' && !isCamera) return;
         
         visibleCount++;
 

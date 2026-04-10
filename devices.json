@@ -618,5 +618,14 @@
         "confidence": 0.85,
         "name": "CamHi Camera (192.168.1.153)",
         "source": "camhi_static"
+    },
+    {
+        "ip": "192.168.1.165",
+        "mac": null,
+        "brand": "CamHi",
+        "type": "IP Camera",
+        "confidence": 0.85,
+        "name": "CamHi Camera (192.168.1.165)",
+        "source": "camhi_static"
     }
 ]

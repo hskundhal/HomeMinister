@@ -4,4 +4,7 @@ netifaces
 requests
 samsungtvws
 aiopylgtv
+bscpylgtv
+python-kasa
+phue
 wakeonlan
